@@ -28,7 +28,7 @@ def check_files():
         print("Status language file not found, creating...")
         with open('configs/status.py', 'a+') as f:
             f.write('''data = {
-"0": "Offline",
+"0": "User offline",
 "1": "In the menus",
 "2": "In a room",
 "3": "Searching for opponents",
@@ -60,7 +60,8 @@ def check_files():
 
 def exception_handler(exc_type, exc_value, tb):
     if exc_type == KeyboardInterrupt:
-        sys.exit()  # If user manually exits, ignore
+        RPC.close()
+        sys.exit()  # If user manually exits, don't log crash
 
     print('\nOh no! An unhandled error has occured. Building traceback log...')
 
@@ -120,11 +121,9 @@ class GUI():
 def listen():
     RPC.connect()
     while True:
-        if get_game_data():  # Returns True if no data found
-            RPC.close()
-            sys.exit()
-        print()
+        get_game_data()
         time.sleep(5)
+        print()
 
 
 def get_game_data():
@@ -143,10 +142,10 @@ def get_game_data():
     table = soup.find(id='online')
     if not table:  # Game not found
         print(f'No such game with ID "{game}" was found!')
-        return True
+        return
     elif not table.text:  # Nobody online
         print('Nobody is online in this game.')
-        return True
+        return
 
     rows = table.find_all('tr')
     data = [[ele.text for ele in row.find_all('td')] for row in rows[2:]]
@@ -159,10 +158,10 @@ def get_game_data():
     if not dataFound:
         print(f'User "{player}" not online.')
         RPC.update(
-            state='User offline',
+            state=status["0"],
             instance=False,
-            large_image="wiimmfi",
-            large_text='Offline'
+            large_image="wiimmfi-offline",
+            large_text=status["0"]
         )
         return
 
@@ -180,6 +179,7 @@ def get_game_data():
             track = gameData['track']
             track = "Not in a game" if track == "" else track
 
+            print("Mario Kart Wii : ", end="")
             print(gameData['name'], end=" : ")
             print(gameData['status'], end=" : ")
             print(len(gameData['players']), end="/12 : ")
@@ -190,17 +190,32 @@ def get_game_data():
                 details=track,
                 party_size=[len(gameData['players']), 12],
                 instance=True,
-                large_image="wiimmfi",
-                large_text=gameData['name']
+                small_image="wiimmfi",
+                small_text="Wiimmfi",
+                large_image="mariokart",
+                large_text="Mario Kart Wii"
             )
             return
-        print(f"{gameData['name']} : {gameData['status']}")
+        print(f"Mario Kart Wii : {gameData['name']} : {gameData['status']}")
         RPC.update(
             state=gameData['status'],
+            details=gameData['name'],
             instance=False,
-            large_image="wiimmfi",
-            large_text=gameData['name']
+            small_image="wiimmfi",
+            small_text="Wiimmfi",
+            large_image="mariokart",
+            large_text="Mario Kart Wii"
         )
+        return
+
+    print(f"{gameData['name']} : {gameData['status']}")
+    RPC.update(
+        state=gameData['status'],
+        details=gameData['name'],
+        instance=False,
+        large_image="wiimmfi",
+        large_text="Wiimmfi"
+    )
 
 
 def main():
