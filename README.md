@@ -26,7 +26,7 @@ data = [
 ]
 ```
 **To edit:** 
-* change `game` to any in [this huge list](https://wiimmfi.de/stat?m=25)
+* change `game` to any ID from [this huge list](https://wiimmfi.de/stat?m=25)
 * change `friend_code` to the 16 digit code you have in the specified game.
 
 *Extended functionality is supported for Mario Kart Wii (such as showing current track and amount of players in the room), its code is `RMCJ`.*
