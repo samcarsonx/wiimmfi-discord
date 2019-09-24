@@ -1,0 +1,180 @@
+-- CRASH AT 15:49:0 --
+LINE: 191
+NEXT: <traceback object at 0x1098c8788>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 191, in <module>
+    main()
+  File "main.py", line 187, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 153, in get_game_data
+    data['name'] = i[10]
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 15:50:21 --
+LINE: 191
+NEXT: <traceback object at 0x10d3d7a48>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 191, in <module>
+    main()
+  File "main.py", line 187, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 153, in get_game_data
+    data['name'] = i[10]
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 15:52:40 --
+LINE: 193
+NEXT: <traceback object at 0x111126c08>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 193, in <module>
+    main()
+  File "main.py", line 189, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 153, in get_game_data
+    data['name'] = i[10]
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 15:54:2 --
+LINE: 193
+NEXT: <traceback object at 0x10dc21108>
+TYPE: <class 'KeyError'>
+VALUE: 'members'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 193, in <module>
+    main()
+  File "main.py", line 189, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 164, in get_game_data
+    if any(j['fc'] == player for j in i['members']):
+KeyError: 'members'
+-- CRASH AT 15:54:46 --
+LINE: 196
+NEXT: <traceback object at 0x10d487488>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    main()
+  File "main.py", line 192, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 170, in get_game_data
+    if data['track'].exists():
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 15:55:0 --
+LINE: 196
+NEXT: <traceback object at 0x105c47588>
+TYPE: <class 'KeyError'>
+VALUE: 'track'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    main()
+  File "main.py", line 192, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 170, in get_game_data
+    if gameData['track'].exists():
+KeyError: 'track'
+-- CRASH AT 15:55:19 --
+LINE: 196
+NEXT: <traceback object at 0x107204488>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    main()
+  File "main.py", line 192, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 181, in get_game_data
+    print(f"{data['name']} : {data['status']}")
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 15:57:26 --
+LINE: 199
+NEXT: <traceback object at 0x1095f1608>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 199, in <module>
+    main()
+  File "main.py", line 195, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 178, in get_game_data
+    party_size=[len(data['players']), 12],
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 16:14:13 --
+LINE: 204
+NEXT: <traceback object at 0x110dbc2c8>
+TYPE: <class 'KeyError'>
+VALUE: 'name'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 204, in <module>
+    main()
+  File "main.py", line 200, in main
+    GUI()
+  File "main.py", line 83, in __init__
+    self.main_menu()
+  File "main.py", line 112, in main_menu
+    to_do()
+  File "main.py", line 118, in listen
+    if get_game_data():  # Returns True if no data found
+  File "main.py", line 160, in get_game_data
+    large_text=gameData['name']
+KeyError: 'name'

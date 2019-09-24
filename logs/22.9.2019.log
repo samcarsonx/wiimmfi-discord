@@ -1,0 +1,690 @@
+-- CRASH AT 12:58:54 --
+LINE: 79
+NEXT: <traceback object at 0x10210f408>
+TYPE: <class 'KeyboardInterrupt'>
+VALUE: 
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 79, in <module>
+    if __name__ == '__main__':
+  File "main.py", line 75, in main
+    make_dirs()
+  File "main.py", line 41, in __init__
+    def __init__(self):
+  File "main.py", line 56, in main_menu
+    while not done:
+KeyboardInterrupt
+-- CRASH AT 13:1:3 --
+LINE: 80
+NEXT: <traceback object at 0x101583a08>
+TYPE: <class 'KeyboardInterrupt'>
+VALUE: 
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    main()
+  File "main.py", line 76, in main
+    GUI()
+  File "main.py", line 42, in __init__
+    self.main_menu()
+  File "main.py", line 57, in main_menu
+    choice = input('> ')
+KeyboardInterrupt
+-- CRASH AT 13:46:36 --
+LINE: 113
+NEXT: <traceback object at 0x100a731c8>
+TYPE: <class 'ModuleNotFoundError'>
+VALUE: No module named 'config.config'; 'config' is not a package
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 113, in <module>
+    main()
+  File "main.py", line 108, in main
+    make_files()
+  File "main.py", line 16, in make_files
+    import config.config as cfg
+ModuleNotFoundError: No module named 'config.config'; 'config' is not a package
+-- CRASH AT 13:46:56 --
+LINE: 113
+NEXT: <traceback object at 0x10417ea48>
+TYPE: <class 'KeyError'>
+VALUE: 2
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 113, in <module>
+    main()
+  File "main.py", line 108, in main
+    make_files()
+  File "main.py", line 17, in make_files
+    print(cfg[0][2])
+KeyError: 2
+-- CRASH AT 13:47:6 --
+LINE: 113
+NEXT: <traceback object at 0x103ebfac8>
+TYPE: <class 'KeyError'>
+VALUE: 1
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 113, in <module>
+    main()
+  File "main.py", line 108, in main
+    make_files()
+  File "main.py", line 17, in make_files
+    print(cfg[0][1])
+KeyError: 1
+-- CRASH AT 13:49:44 --
+LINE: 120
+NEXT: <traceback object at 0x106d8e8c8>
+TYPE: <class 'ModuleNotFoundError'>
+VALUE: No module named 'config'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 120, in <module>
+    main()
+  File "main.py", line 115, in main
+    make_files()
+  File "main.py", line 23, in make_files
+    from config import config as cfg
+ModuleNotFoundError: No module named 'config'
+-- CRASH AT 13:51:12 --
+LINE: 121
+NEXT: <traceback object at 0x102b53188>
+TYPE: <class 'AttributeError'>
+VALUE: 'GUI' object has no attribute 'settings'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 121, in <module>
+    main()
+  File "main.py", line 117, in main
+    GUI()
+  File "main.py", line 54, in __init__
+    self.main_menu()
+  File "main.py", line 73, in main_menu
+    '2': self.settings,
+AttributeError: 'GUI' object has no attribute 'settings'
+-- CRASH AT 17:11:37 --
+LINE: 132
+NEXT: <traceback object at 0x1020c0d08>
+TYPE: <class 'ModuleNotFoundError'>
+VALUE: No module named 'configs.friend_codes'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 132, in <module>
+    main()
+  File "main.py", line 127, in main
+    make_files()
+  File "main.py", line 20, in make_files
+    from configs.friend_codes import data as friend_code
+ModuleNotFoundError: No module named 'configs.friend_codes'
+-- CRASH AT 17:28:29 --
+LINE: 137
+NEXT: <traceback object at 0x102143308>
+TYPE: <class 'TypeError'>
+VALUE: clear() missing 1 required positional argument: 'self'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 24, in make_files
+    GUI.clear()
+TypeError: clear() missing 1 required positional argument: 'self'
+-- CRASH AT 17:31:34 --
+LINE: 136
+NEXT: <traceback object at 0x106027188>
+TYPE: <class 'RuntimeError'>
+VALUE: Friend_code config contains default value.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 24, in make_files
+    raise RuntimeError('Friend_code config contains default value.')
+RuntimeError: Friend_code config contains default value.
+-- CRASH AT 17:58:14 --
+LINE: 121
+NEXT: <traceback object at 0x108f572c8>
+TYPE: <class 'RuntimeError'>
+VALUE: Friend code is set as default value.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 121, in <module>
+    main()
+  File "main.py", line 116, in main
+    make_files()
+  File "main.py", line 25, in make_files
+    raise RuntimeError('Friend code is set as default value.')
+RuntimeError: Friend code is set as default value.
+-- CRASH AT 18:9:8 --
+LINE: 134
+NEXT: <traceback object at 0x10b455ac8>
+TYPE: <class 'RuntimeError'>
+VALUE: Friend code is set as default value.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 134, in <module>
+    main()
+  File "main.py", line 129, in main
+    make_files()
+  File "main.py", line 32, in make_files
+    raise RuntimeError('Friend code is set as default value.')
+RuntimeError: Friend code is set as default value.
+-- CRASH AT 18:13:3 --
+LINE: 135
+NEXT: <traceback object at 0x109215d48>
+TYPE: <class 'AttributeError'>
+VALUE: 'str' object has no attribute 'contains'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 135, in <module>
+    main()
+  File "main.py", line 130, in main
+    make_files()
+  File "main.py", line 32, in make_files
+    if any(a.contains('XXXX') for a in x):
+  File "main.py", line 32, in <genexpr>
+    if any(a.contains('XXXX') for a in x):
+AttributeError: 'str' object has no attribute 'contains'
+-- CRASH AT 18:14:48 --
+LINE: 135
+NEXT: <traceback object at 0x10c29ce48>
+TYPE: <class 'AttributeError'>
+VALUE: 'str' object has no attribute 'value'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 135, in <module>
+    main()
+  File "main.py", line 130, in main
+    make_files()
+  File "main.py", line 32, in make_files
+    if any('XXXX' in a.value() for a in x):
+  File "main.py", line 32, in <genexpr>
+    if any('XXXX' in a.value() for a in x):
+AttributeError: 'str' object has no attribute 'value'
+-- CRASH AT 18:15:7 --
+LINE: 135
+NEXT: <traceback object at 0x10b382e08>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains default value(s).
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 135, in <module>
+    main()
+  File "main.py", line 130, in main
+    make_files()
+  File "main.py", line 33, in make_files
+    raise RuntimeError('Config contains default value(s).')
+RuntimeError: Config contains default value(s).
+-- CRASH AT 18:23:25 --
+LINE: 136
+NEXT: <traceback object at 0x1025d6fc8>
+TYPE: <class 'ValueError'>
+VALUE: invalid literal for int() with base 10: 'g'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 33, in make_files
+    if any(int(a) not in range(0, 9) for a in y.replace('-', '')):
+  File "main.py", line 33, in <genexpr>
+    if any(int(a) not in range(0, 9) for a in y.replace('-', '')):
+ValueError: invalid literal for int() with base 10: 'g'
+-- CRASH AT 18:24:3 --
+LINE: 136
+NEXT: <traceback object at 0x10cf9ccc8>
+TYPE: <class 'ValueError'>
+VALUE: invalid literal for int() with base 10: 'X'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 33, in make_files
+    if any(int(a) not in range(0, 9) for a in x[y].replace('-', '')):
+  File "main.py", line 33, in <genexpr>
+    if any(int(a) not in range(0, 9) for a in x[y].replace('-', '')):
+ValueError: invalid literal for int() with base 10: 'X'
+-- CRASH AT 18:25:12 --
+LINE: 136
+NEXT: <traceback object at 0x10b495ec8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 18:25:45 --
+LINE: 136
+NEXT: <traceback object at 0x10f2feb48>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 18:26:1 --
+LINE: 137
+NEXT: <traceback object at 0x107186f08>
+TYPE: <class 'NameError'>
+VALUE: name 'a' is not defined
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    print(a)
+NameError: name 'a' is not defined
+-- CRASH AT 18:26:23 --
+LINE: 136
+NEXT: <traceback object at 0x11102a948>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 18:26:46 --
+LINE: 137
+NEXT: <traceback object at 0x110ae9e48>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 35, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 18:28:42 --
+LINE: 135
+NEXT: <traceback object at 0x10d81ac08>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 135, in <module>
+    main()
+  File "main.py", line 130, in main
+    make_files()
+  File "main.py", line 33, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:20:36 --
+LINE: 135
+NEXT: <traceback object at 0x10c68ba48>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 135, in <module>
+    main()
+  File "main.py", line 130, in main
+    make_files()
+  File "main.py", line 33, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:20:50 --
+LINE: 136
+NEXT: <traceback object at 0x104c45bc8>
+TYPE: <class 'NameError'>
+VALUE: name 'a' is not defined
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 33, in make_files
+    print(a)
+NameError: name 'a' is not defined
+-- CRASH AT 19:21:5 --
+LINE: 136
+NEXT: <traceback object at 0x10970ecc8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:21:29 --
+LINE: 136
+NEXT: <traceback object at 0x106c5bb48>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:22:25 --
+LINE: 136
+NEXT: <traceback object at 0x107257b48>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:22:39 --
+LINE: 136
+NEXT: <traceback object at 0x108349dc8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:23:0 --
+LINE: 137
+NEXT: <traceback object at 0x10e71dbc8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 35, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:23:8 --
+LINE: 137
+NEXT: <traceback object at 0x104f03e88>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 35, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:23:24 --
+LINE: 137
+NEXT: <traceback object at 0x108d01b88>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 35, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:23:33 --
+LINE: 137
+NEXT: <traceback object at 0x10444bfc8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 137, in <module>
+    main()
+  File "main.py", line 132, in main
+    make_files()
+  File "main.py", line 35, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:24:24 --
+LINE: 136
+NEXT: <traceback object at 0x104ed5ec8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:24:37 --
+LINE: 136
+NEXT: <traceback object at 0x10f285d08>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:25:33 --
+LINE: 136
+NEXT: <traceback object at 0x10b808f88>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:25:39 --
+LINE: 136
+NEXT: <traceback object at 0x10a426ec8>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:25:48 --
+LINE: 136
+NEXT: <traceback object at 0x10bd76c48>
+TYPE: <class 'RuntimeError'>
+VALUE: Config contains invalid characters.
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 131, in main
+    make_files()
+  File "main.py", line 34, in make_files
+    raise RuntimeError('Config contains invalid characters.')
+RuntimeError: Config contains invalid characters.
+-- CRASH AT 19:47:53 --
+LINE: 148
+NEXT: <traceback object at 0x10b99fa48>
+TYPE: <class 'TypeError'>
+VALUE: 'NoneType' object is not subscriptable
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 148, in <module>
+    main()
+  File "main.py", line 144, in main
+    GUI()
+  File "main.py", line 80, in __init__
+    self.main_menu()
+  File "main.py", line 111, in main_menu
+    to_do()
+  File "main.py", line 115, in get_game_data
+    game = fc_data['game']
+TypeError: 'NoneType' object is not subscriptable
+-- CRASH AT 19:49:45 --
+LINE: 147
+NEXT: <traceback object at 0x1050468c8>
+TYPE: <class 'TypeError'>
+VALUE: 'NoneType' object is not subscriptable
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 143, in main
+    GUI()
+  File "main.py", line 80, in __init__
+    self.main_menu()
+  File "main.py", line 111, in main_menu
+    to_do()
+  File "main.py", line 116, in get_game_data
+    html = requests.get('https://wiimmfi.de/game/' + game['game']).text
+TypeError: 'NoneType' object is not subscriptable
+-- CRASH AT 19:50:9 --
+LINE: 147
+NEXT: <traceback object at 0x10e5ede08>
+TYPE: <class 'NameError'>
+VALUE: name 'game' is not defined
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 143, in main
+    GUI()
+  File "main.py", line 80, in __init__
+    self.main_menu()
+  File "main.py", line 111, in main_menu
+    to_do()
+  File "main.py", line 116, in get_game_data
+    html = requests.get('https://wiimmfi.de/game/' + game['game']).text
+NameError: name 'game' is not defined
+-- CRASH AT 19:51:59 --
+LINE: 147
+NEXT: <traceback object at 0x104c7cdc8>
+TYPE: <class 'NameError'>
+VALUE: name 'fc_data' is not defined
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 143, in main
+    GUI()
+  File "main.py", line 79, in __init__
+    self.main_menu()
+  File "main.py", line 110, in main_menu
+    to_do()
+  File "main.py", line 114, in get_game_data
+    game = fc_data['game']
+NameError: name 'fc_data' is not defined
+-- CRASH AT 19:52:28 --
+LINE: 147
+NEXT: <traceback object at 0x10a494d88>
+TYPE: <class 'TypeError'>
+VALUE: list indices must be integers or slices, not str
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 143, in main
+    GUI()
+  File "main.py", line 78, in __init__
+    self.main_menu()
+  File "main.py", line 109, in main_menu
+    to_do()
+  File "main.py", line 114, in get_game_data
+    game = fc_data['game']
+TypeError: list indices must be integers or slices, not str
+-- CRASH AT 19:52:46 --
+LINE: 147
+NEXT: <traceback object at 0x105586d88>
+TYPE: <class 'NameError'>
+VALUE: name 'game' is not defined
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 143, in main
+    GUI()
+  File "main.py", line 78, in __init__
+    self.main_menu()
+  File "main.py", line 109, in main_menu
+    to_do()
+  File "main.py", line 116, in get_game_data
+    html = requests.get('https://wiimmfi.de/game/' + game).text
+NameError: name 'game' is not defined
+-- CRASH AT 20:17:52 --
+LINE: 156
+NEXT: <traceback object at 0x1110e13c8>
+TYPE: <class 'KeyError'>
+VALUE: 'members'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 156, in <module>
+    main()
+  File "main.py", line 152, in main
+    GUI()
+  File "main.py", line 77, in __init__
+    self.main_menu()
+  File "main.py", line 108, in main_menu
+    to_do()
+  File "main.py", line 142, in get_game_data
+    if obj["members"]["fc"].replace('-', '') == player:
+KeyError: 'members'
+-- CRASH AT 20:19:28 --
+LINE: 160
+NEXT: <traceback object at 0x1055e1408>
+TYPE: <class 'KeyError'>
+VALUE: 'members'
+-- FULL TRACEBACK --
+Traceback (most recent call last):
+  File "main.py", line 160, in <module>
+    main()
+  File "main.py", line 156, in main
+    GUI()
+  File "main.py", line 77, in __init__
+    self.main_menu()
+  File "main.py", line 108, in main_menu
+    to_do()
+  File "main.py", line 146, in get_game_data
+    if obj["members"]["fc"].replace('-', '') == player:
+KeyError: 'members'
