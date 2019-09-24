@@ -35,7 +35,7 @@ data = [
 ### status.py
 ```
 data = {
-    "0": "Offline",
+    "0": "User offline",
     "1": "In the menus",
     "2": "In a room",
     "3": "Searching for opponents",
