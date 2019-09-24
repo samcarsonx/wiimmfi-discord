@@ -177,14 +177,17 @@ def get_game_data():
                 except Exception:
                     pass
         if 'track' in gameData:
+            track = gameData['track']
+            track = "Not in a game" if track == "" else track
+
             print(gameData['name'], end=" : ")
             print(gameData['status'], end=" : ")
             print(len(gameData['players']), end="/12 : ")
-            print(gameData['track'], end="\n")
+            print(track, end="\n")
 
             RPC.update(
                 state=gameData['status'],
-                details=gameData['track'],
+                details=track,
                 party_size=[len(gameData['players']), 12],
                 instance=True,
                 large_image="wiimmfi",
