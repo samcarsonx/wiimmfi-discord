@@ -18,11 +18,14 @@ RPC = Presence(client_id)
 
 def check_files():
     if not os.path.exists('logs'):
+        print("Error log folder not found, creating...")
         os.mkdir('logs')
     if not os.path.exists('configs'):
+        print("Config folder not found, creating...")
         os.mkdir('configs')
 
     if not os.path.exists('configs/status.py'):
+        print("Status language file not found, creating...")
         with open('configs/status.py', 'a+') as f:
             f.write('''data = {
 "0": "Offline",
@@ -36,6 +39,7 @@ def check_files():
 ''')
 
     if not os.path.exists('configs/friend_codes.py'):
+        print("Friend codes config not found, creating...")
         with open('configs/friend_codes.py', 'a+') as f:
             f.write('''data = [
     {
@@ -50,7 +54,7 @@ def check_files():
         sys.exit()
     for x in fc_data:
         if any(not c.isdigit() for c in x['friend_code'].replace('-', '')):
-            print('Config contains invalid characters.\n')
+            print('Friend code has non-digits or default values.\n')
             sys.exit()
 
 

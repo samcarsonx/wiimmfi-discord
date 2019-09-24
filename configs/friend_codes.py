@@ -1,6 +1,6 @@
 data = [
     {
-        "game": "RMCJ",
-        "friend_code": "1290-4003-7142"
+        "game": "XXXX",
+        "friend_code": "XXXX-XXXX-XXXX-XXXX"
     }
 ]
