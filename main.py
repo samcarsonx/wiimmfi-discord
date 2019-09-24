@@ -28,13 +28,13 @@ def check_files():
         print("Status language file not found, creating...")
         with open('configs/status.py', 'a+') as f:
             f.write('''data = {
-"0": "User offline",
-"1": "In the menus",
-"2": "In a room",
-"3": "Searching for opponents",
-"4": "Connecting to private room",
-"5": "Hosting a room",
-"6": "Special brawling"
+    "0": "User offline",
+    "1": "In the menus",
+    "2": "In a room",
+    "3": "Searching for opponents",
+    "4": "Connecting to private room",
+    "5": "Hosting a room",
+    "6": "Special brawling"
 }
 ''')
 
