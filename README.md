@@ -29,7 +29,7 @@ data = [
 * change `game` to any in [this huge list](https://wiimmfi.de/stat?m=25)
 * change `friend_code` to the 16 digit code you have in the specified game.
 
-*Extended functionality is supported for Mario Kart Wii, its code is `RMCJ`.*
+*Extended functionality is supported for Mario Kart Wii (such as showing current track and amount of players in the room), its code is `RMCJ`.*
 *Only hyphens and digits are supported in the friend code.*
 
 ### status.py
