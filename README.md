@@ -50,4 +50,4 @@ data = {
 *Status 6 is specific for Super Smash Bros Brawl for an unknown reason*
 
 ## Roadmap
-In the future, I plan on re-writing this to make it clearer and faster to use.
+~~In the future, I plan on re-writing this to make it clearer and faster to use.~~ *No need, already efficient.*
